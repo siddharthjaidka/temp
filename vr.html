@@ -30,14 +30,14 @@
                         <i class="material-symbols-outlined">phone_in_talk</i>
                     </a>
 
-                    <a class="horiz-b">
+                    <a class="horiz-b" id="horiz-b">
                         <i class="material-symbols-outlined" style="font-weight: bold;">more_horiz</i>
                     </a>
                 </div>
             </div>
             <div style="position: relative; ">
                 <i class="material-symbols-outlined" id="close-b">close</i>
-                <div class="checkers">
+                <div class="checkers" id="options">
                     <div class="checkers__item">
                         <i class="material-symbols-outlined">info</i>
                         <span>Rera no.</span>
@@ -70,5 +70,22 @@
         </div>
 
     </section>
+    <script>
+         var close = document.getElementById("close-b");
+        var more_b = document.getElementById("horiz-b");
+
+        close.addEventListener('click', () => {
+            var options = document.getElementById("options");
+            options.setAttribute("style", "visibility:hidden;")
+            close.setAttribute("style", "visibility:hidden;")
+        });
+        more_b.addEventListener("click", () => {
+            var options = document.getElementById("options");
+            options.setAttribute("style", "visibility:visible;")
+            close.setAttribute("style", "visibility:visible;")
+
+
+        }, false);
+    </script>
     <script src="./tooltip.js""></script>
     <script src=" ./dropdown.js"> </script> </body>
