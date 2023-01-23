@@ -16,24 +16,22 @@
 
 <body>
     <script src="./notify.js" defer="defer"></script>
-    <section class="container">
-        <div class="card" style="margin-top: 0;">
-            <iframe src="https://tours.vapp.in/l&t/crescent_bay/aerial/day/" frameborder="0"
-                style="overflow:hidden;height:100%;width:100%;max-width: 100vw;     max-height: 100vh;" height="100%" width="100%"></iframe>
-            <div style="position: relative; ">
-                <div class="three vr">
-                    <a class="whatsapp-b" target="_blank"
-                        href="https://api.whatsapp.com/send?phone=911234567890&text=I would like to know more about Cresent Bay project">
-                        <i class="fa fa-whatsapp" style="margin-left: 3px;" aria-hidden="true"></i>
-                    </a>
-                    <a class="call-b" href="tel:+911234567890">
-                        <i class="material-symbols-outlined">phone_in_talk</i>
-                    </a>
+    <div class="iframeWrapper">
+        <iframe src="https://tours.vapp.in/l&t/crescent_bay/aerial/day/" allowfullscreen></iframe>
+        </div>
+        <div style="position: relative; ">
+            <div class="three vr">
+                <a class="whatsapp-b" target="_blank"
+                    href="https://api.whatsapp.com/send?phone=911234567890&text=I would like to know more about Cresent Bay project">
+                    <i class="fa fa-whatsapp" style="margin-left: 3px;" aria-hidden="true"></i>
+                </a>
+                <a class="call-b" href="tel:+911234567890">
+                    <i class="material-symbols-outlined">phone_in_talk</i>
+                </a>
 
-                    <a class="horiz-b" id="horiz-b">
-                        <i class="material-symbols-outlined" style="font-weight: bold;">more_horiz</i>
-                    </a>
-                </div>
+                <a class="horiz-b" id="horiz-b">
+                    <i class="material-symbols-outlined" style="font-weight: bold;">more_horiz</i>
+                </a>
             </div>
             <div style="position: relative; ">
                 <i class="material-symbols-outlined" id="close-b">close</i>
@@ -64,12 +62,9 @@
                         <i class="material-symbols-outlined">live_tv</i>
                         <span>Virtual Demo</span></div>
                         
-                    <!-- <div class="checkers__item">9</div> -->
                 </div>
             </div>
-        </div>
 
-    </section>
     <script>
          var close = document.getElementById("close-b");
         var more_b = document.getElementById("horiz-b");
