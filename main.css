@@ -194,6 +194,14 @@ div.logo-img{
 .one .info-b {
 	margin-right: -10px;
 }
+.one {
+	margin-right: -40px;
+	font-size: 12px;
+}
+
+.one span{
+	margin-top: 7px !important;
+}
 
 .content {
 	width: 100%;
@@ -313,7 +321,7 @@ input {
 }
 
 .vr-b {
-	visibility: hidden;
+	/* visibility: hidden; */
 	cursor: pointer;
 	position: absolute;
 	height: 400px;
