@@ -70,7 +70,7 @@ a {
 .card {
 	background: #fff;
 	margin: 0 auto;
-	width: 360px;
+	width: 100vw   ;
 	height: 1000px;
 	margin-top: 54px;
 
@@ -86,7 +86,7 @@ a {
 }
 .logo-container{
 	margin: 0 auto;
-	width: 360px;
+	width: 100vw   ;
 }
 .profile-img {
 	display: inline-block;
@@ -100,7 +100,7 @@ a {
 
 div.logo-img{
 	background: #ffffff;
-	width: 360px;
+	width: 100vw   ;
 	z-index: 999999;
     border: 1px solid #ccc;;
 }
@@ -179,7 +179,7 @@ div.logo-img{
 
 .nav {
 	position: fixed;
-	width: 360px;
+	width: 100vw   ;
 	bottom: 0;
 	height: 55px;
 	/* box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); */
@@ -288,7 +288,7 @@ input {
 .vr-b a {
 	margin-top: 300px;
 	height: -webkit-fill-available;
-	width: 360px;
+	width: 100vw   ;
 }
 
 .vr-b a p {
