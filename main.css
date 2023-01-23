@@ -192,15 +192,17 @@ div.logo-img{
 }
 
 .one .info-b {
-	margin-right: -10px;
+	margin-right: 0;
+    width: auto;
 }
 .one {
-	margin-right: -40px;
+	
 	font-size: 12px;
 }
 
 .one span{
 	margin-top: 7px !important;
+	white-space: nowrap;
 }
 
 .content {
