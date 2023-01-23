@@ -196,7 +196,7 @@ div.logo-img{
     width: auto;
 }
 .one {
-	
+	white-space: nowrap;
 	font-size: 12px;
 }
 
