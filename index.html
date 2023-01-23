@@ -120,8 +120,10 @@
                 </a>
             </nav>
         </div>
-        <div class="card">
-            <div class="card-inner">
+        <div class="card" >
+            <div class="card-inner" style="
+            margin-bottom: -30px;
+        ">
 
                 <div class="card-header">
                     <div class="profile-img">
@@ -132,14 +134,14 @@
                         <div class="location">November 22</div>
                     </div>
                 </div>
-                <div id="content" class="content">
-                    <div id="vr-b" class="vr-b">
+                <div id="content-1" class="content">
+                    <div id="vr-b-1" class="vr-b">
                         <a>
                             <i class="material-symbols-outlined">view_in_ar</i>
                             <p>View in VR</p>
                         </a>
                     </div>
-                    <img src="./flat.jpeg" class="content" />
+                    <img src="./bo.webp" class="content" />
                 </div>
                 <div class="card-footer">
                     <div class="footer-content">
@@ -159,7 +161,7 @@
                                     <i class="material-symbols-outlined">share</i>
                                 </a>
                             </div>
-                            <div class="one"  id="info-bu"style="display: inline-flex; width: 150px;">
+                            <div class="one"  id="info-bu-1"style="display: inline-flex; width: 150px;">
                                 <span style="margin-top: 6px;">More Info</span>
                                 <a class="info-b" >
                                    <i class="material-symbols-outlined">info</i>
@@ -168,8 +170,87 @@
                         </div>
 
                         <span class="likes">50 shortlists</span>
-                        <p><span>lntrealty.official</span>Launching West Embrace at 77 Crossroads</br>• Located at the
-                            epicenter of Mumbai</p>
+                        <p><span>lntrealty.official</span>Raintree Boulevard in Hebbal</br>• Located at the
+                            epicenter of Bangalore</p>
+                        <p><span>john_doe</span> Beautiful Property ♥ </p>
+                        <p><span>jenny</span> What is the possession date? </p>
+
+                    </div>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav__link  nav__link--active">
+                    <i class="material-symbols-outlined nav__icon">home</i>
+                    <span class="nav__text">Home</span>
+                </a>
+                <a href="#" class="nav__link">
+                    <i class="material-symbols-outlined  nav__icon">favorite</i>
+                    <span class="nav__text">Shortlist</span>
+                </a>
+                <a href="#" class="nav__link">
+
+                    <i class="material-symbols-outlined  nav__icon">filter_list</i>
+                    <span class="nav__text">Filters</span>
+                </a>
+                <a href="#" class="nav__link">
+                    <i class="material-symbols-outlined  nav__icon">rocket_launch</i>
+                    <span class="nav__text">Launches</span>
+                </a>
+                <a href="#" class="nav__link">
+                    <i class="material-symbols-outlined  nav__icon">search</i>
+                    <span class="nav__text">Search</span>
+                </a>
+            </nav>
+        </div>
+         <div class="card">
+            <div class="card-inner">
+
+                <div class="card-header">
+                    <div class="profile-img">
+                        <img class="profile-img" src="./lnt.jpeg" />
+                    </div>
+                    <div class="profile-info">
+                        <div class="name">lntrealty.official</div>
+                        <div class="location">November 22</div>
+                    </div>
+                </div>
+                <div id="content-2" class="content">
+                    <div id="vr-b-2" class="vr-b">
+                        <a>
+                            <i class="material-symbols-outlined">view_in_ar</i>
+                            <p>View in VR</p>
+                        </a>
+                    </div>
+                    <img src="./co.jpeg" class="content" />
+                </div>
+                <div class="card-footer">
+                    <div class="footer-content">
+                        <div class="top-icons">
+                            <div class="three">
+                                <a class="shortlist-b" data-mx-placement="right"
+                                    data-mx-title="Shortlist">
+                                    <i class="material-symbols-outlined">favorite</i>
+                                </a>
+                                <a class="comment-b" data-mx-placement="right"
+                                    data-mx-title="Comments">
+                                    <i class="material-symbols-outlined">speaker_notes</i>
+                                </a>
+
+                                <a class="share-b" data-mx-placement="right"
+                                    data-mx-title="Share">
+                                    <i class="material-symbols-outlined">share</i>
+                                </a>
+                            </div>
+                            <div class="one"  id="info-bu-2"style="display: inline-flex; width: 150px;">
+                                <span style="margin-top: 6px;">More Info</span>
+                                <a class="info-b" >
+                                   <i class="material-symbols-outlined">info</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <span class="likes">50 shortlists</span>
+                        <p><span>lntrealty.official</span>The CoralWood
                         <p><span>john_doe</span> Beautiful Property ♥ </p>
                         <p><span>jenny</span> What is the possession date? </p>
 
@@ -202,10 +283,19 @@
         </div>
     </section>
     <script defer="defer">
-        const shortlist = document.body.querySelector('.shortlist-b');
-        const comment = document.body.querySelector('.comment-b');
+        const shortlist = document.body.querySelectorAll('.shortlist-b');
 
-        shortlist.addEventListener('click', () => {
+        shortlist[0].addEventListener('click', () => {
+            new Notify.prototype.constructor({
+                message: 'Added to shortlist'
+            });
+        });
+        shortlist[1].addEventListener('click', () => {
+            new Notify.prototype.constructor({
+                message: 'Added to shortlist'
+            });
+        });
+        shortlist[2].addEventListener('click', () => {
             new Notify.prototype.constructor({
                 message: 'Added to shortlist'
             });
@@ -213,13 +303,32 @@
     </script>
     <script>
         var item = document.getElementById("content");
+        var item_1 = document.getElementById("content-1");
+
+        var item_2 = document.getElementById("content-2");
+
         var vr_b = document.getElementById("vr-b");
         var info_b = document.getElementById("info-bu");
-
+        var vr_b_1 = document.getElementById("vr-b-1");
+        var info_b_1 = document.getElementById("info-bu-1");
+        var vr_b_2 = document.getElementById("vr-b-2");
+        var info_b_2 = document.getElementById("info-bu-2");
         vr_b.addEventListener('click', () => {
             window.location.href = "./vr.html";
         });
         info_b.addEventListener('click', () => {
+            window.location.href = "./info.html";
+        });
+        vr_b_1.addEventListener('click', () => {
+            window.location.href = "./vr1.html";
+        });
+        info_b_1.addEventListener('click', () => {
+            window.location.href = "./info.html";
+        });
+        vr_b_2.addEventListener('click', () => {
+            window.location.href = "./vr2.html";
+        });
+        info_b_2.addEventListener('click', () => {
             window.location.href = "./info.html";
         });
         item.addEventListener("mouseover", () => {
@@ -229,6 +338,24 @@
         }, false);
         item.addEventListener("mouseout", () => {
             var vr = document.getElementById("vr-b");
+            vr.setAttribute("style", "visibility:hidden;")
+        }, false);
+        item_1.addEventListener("mouseover", () => {
+            var vr = document.getElementById("vr-b-1");
+            vr.setAttribute("style", "visibility:visible;")
+
+        }, false);
+        item_1.addEventListener("mouseout", () => {
+            var vr = document.getElementById("vr-b-1");
+            vr.setAttribute("style", "visibility:hidden;")
+        }, false);
+        item_2.addEventListener("mouseover", () => {
+            var vr = document.getElementById("vr-b-2");
+            vr.setAttribute("style", "visibility:visible;")
+
+        }, false);
+        item_2.addEventListener("mouseout", () => {
+            var vr = document.getElementById("vr-b-2");
             vr.setAttribute("style", "visibility:hidden;")
         }, false);
         document.getElementById("menu-btn").addEventListener("click", () => {
