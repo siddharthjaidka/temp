@@ -75,7 +75,7 @@
                                     <i class="material-symbols-outlined">share</i>
                                 </a>
                             </div>
-                            <div class="one" style="display: inline-flex; width: 150px;">
+                            <div class="one"  id="info-bu"style="display: inline-flex; width: 150px;">
                                 <span style="margin-top: 6px;">More Info</span>
                                 <a class="info-b" >
                                    <i class="material-symbols-outlined">info</i>
@@ -131,9 +131,13 @@
     <script>
         var item = document.getElementById("content");
         var vr_b = document.getElementById("vr-b");
+        var info_b = document.getElementById("info-bu");
 
         vr_b.addEventListener('click', () => {
             window.location.href = "./vr.html";
+        });
+        info_b.addEventListener('click', () => {
+            window.location.href = "./info.html";
         });
         item.addEventListener("mouseover", () => {
             var vr = document.getElementById("vr-b");

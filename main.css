@@ -70,7 +70,7 @@ a {
 .card {
 	background: #fff;
 	margin: 0 auto;
-	width: 100vw   ;
+	width: 100vw     ;
 	height: 1000px;
 	margin-top: 54px;
 
@@ -81,12 +81,46 @@ a {
 	border-radius: 3px;
 }
 
+
+.priceListTable table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #333;
+    border: solid 1px #e5e5e5
+}
+
+.priceListTable thead {
+    background: #f7f7f7
+}
+
+.priceListTable tr td,.priceListTable tr th {
+    padding: 12px;
+    white-space: nowrap;
+	padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.priceListTable tr~tr td {
+    border-top: 1px solid #ececec
+}
+
+.priceListTable tbody tr {
+    cursor: pointer
+}
+
+.priceListTable tbody tr:hover {
+    background: #fbfbfb
+}
+
+.priceListTable tr td a {
+    color: #000
+}
 .card-header {
 	padding: 15px;
 }
 .logo-container{
 	margin: 0 auto;
-	width: 100vw   ;
+	width: 100vw     ;
 }
 .profile-img {
 	display: inline-block;
@@ -100,7 +134,7 @@ a {
 
 div.logo-img{
 	background: #ffffff;
-	width: 100vw   ;
+	width: 100vw     ;
 	z-index: 999999;
     border: 1px solid #ccc;;
 }
@@ -179,7 +213,7 @@ div.logo-img{
 
 .nav {
 	position: fixed;
-	width: 100vw   ;
+	width: 100vw     ;
 	bottom: 0;
 	height: 55px;
 	/* box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); */
@@ -288,7 +322,7 @@ input {
 .vr-b a {
 	margin-top: 300px;
 	height: -webkit-fill-available;
-	width: 100vw   ;
+	width: 100vw     ;
 }
 
 .vr-b a p {
